@@ -10,7 +10,7 @@ A powerful and user-friendly Streamlit-based web application for real-time objec
 -  Statistical Insights: View real-time results and detection statistics.
 -  Docker Support: Fully containerized for easy deployment.
 
-## 🚀 Installation: 
+##  Installation: 
 
 ### Local Installation
 1. Clone the repository:
@@ -60,12 +60,19 @@ Use the file upload section for individual image analysis.
 Plaintext
 
 real-time-object-detection/
-├── app.py                    # Main Streamlit application
-├── object_detector.py        # Object detection logic
+
+├── app.py                       # Main Streamlit application
+
+├── object_detector.py           # Object detection logic
+
 ├── requirements.txt          # Python libraries
+
 ├── Dockerfile               # Docker configuration
+
 ├── docker-compose.yml       # Docker Compose file
+
 ├── download_models.py       # Model weights and download script
+
 └── visualization.py         # Helper functions for visualization
  
  Configuration:
@@ -83,4 +90,5 @@ Contributions are welcome! For major changes, please open an issue first to disc
 
 
 License:
+
 This project is licensed under the MIT License.
