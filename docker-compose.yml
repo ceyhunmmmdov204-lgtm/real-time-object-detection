@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  object-detection:
+    build: .
+    container_name: real-time-object-detection
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models
+    environment:
+      - PYTHONUNBUFFERED=1
+    devices:
+      - /dev/video0:/dev/video0  # For camera access (Linux)
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
